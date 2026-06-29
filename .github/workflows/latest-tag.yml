@@ -10,7 +10,6 @@ jobs:
     steps:
       - uses: oprypin/find-latest-tag@v1
         with:
-          repository: kubevela/workflow
           releases-only: true
         id: latest_tag
 
