@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: oprypin/find-latest-tag@v1
         with:
+          repository: jerrinfrancis/gha-tests
           releases-only: true
         id: latest_tag
 
