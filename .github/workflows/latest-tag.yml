@@ -1,4 +1,4 @@
-name: Print latest kubevela/workflow tag
+name: Print latest tag
 
 on:
   workflow_dispatch:
@@ -15,4 +15,4 @@ jobs:
         id: latest_tag
 
       - name: Print latest tag
-        run: echo "Latest kubevela/workflow release tag is ${{ steps.latest_tag.outputs.tag }}"
+        run: echo "Latest release tag is ${{ steps.latest_tag.outputs.tag }}"
