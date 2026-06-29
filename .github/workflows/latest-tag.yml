@@ -1,0 +1,18 @@
+name: Print latest kubevela/workflow tag
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  print-latest-tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: oprypin/find-latest-tag@v1
+        with:
+          repository: kubevela/workflow
+          releases-only: true
+        id: latest_tag
+
+      - name: Print latest tag
+        run: echo "Latest kubevela/workflow release tag is ${{ steps.latest_tag.outputs.tag }}"
