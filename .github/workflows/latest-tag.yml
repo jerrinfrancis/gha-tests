@@ -1,4 +1,4 @@
-name: Print latest tag
+name: Print latest tag 1
 
 on:
   workflow_dispatch:
